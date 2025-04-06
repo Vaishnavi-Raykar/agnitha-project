@@ -9,12 +9,8 @@ This project fetches research papers from the PubMed API based on a user-specifi
     ```bash
     git clone <repository_url>
     ```
-2.  Navigate to the project directory:
 
-    ```bash
-    cd get-papers-list
-    ```
-3.  Install the dependencies using Poetry:
+2.  Install the dependencies using Poetry:
 
     ```bash
     poetry install
@@ -26,6 +22,14 @@ This project fetches research papers from the PubMed API based on a user-specifi
 poetry run python get_papers_list.py -h
 ```
 
-## Contributing
+## Run Command
 
-Contributions are welcome! Please feel free to submit a pull request.
+```bash
+poetry run get-papers-list "<search-query>" -f <output-file-path>
+```
+
+#### Example -
+
+```bash 
+poetry run get-papers-list "biotechnology AND drug" -f output_files/biotech-drugs.csv
+```
